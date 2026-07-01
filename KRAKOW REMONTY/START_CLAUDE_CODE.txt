@@ -1,0 +1,15 @@
+Przeczytaj najpierw CLAUDE.md, a następnie wszystkie pliki od 01-research.md do 09-project-summary.md. Traktuj je jako kompletną i wiążącą specyfikację projektu.
+
+Zbuduj kompletną, klikalną i responsywną stronę demonstracyjną KrakowRemonty.com / FHU ULMAR w czystym HTML, CSS i JavaScript. Główna specyfikacja techniczna znajduje się w 08-claude-build-spec.md.
+
+Nie projektuj strony od nowa. Nie zastępuj kierunku „Remont bez chaosu” generycznym szablonem. Nie używaj Inter, Roboto, Arial ani domyślnej typografii systemowej. Zastosuj Bricolage Grotesque, Source Sans 3 i IBM Plex Mono oraz pełny system kolorów, atmosferycznych teł, nieregularnych kompozycji i motion opisany w plikach.
+
+Wykonaj wszystkie pięć podstron, wspólną nawigację, responsywne menu, interaktywną mapę remontu, mozaikę usług, sekwencję obawa / sposób pracy, galerię z filtrami i lightboxem oraz demonstracyjny formularz bez wysyłania danych.
+
+Najpierw przedstaw krótki plan maksymalnie 8 punktów. Następnie wykonaj całość bez zatrzymywania się po akceptację i bez zadawania pytań, chyba że wystąpi rzeczywista przeszkoda techniczna uniemożliwiająca dalszą pracę.
+
+Utwórz pliki w bieżącym folderze projektu. Uruchom lokalny serwer, sprawdź podstrony na mobile, tablecie i desktopie, sprawdź konsolę oraz wszystkie interakcje. Po pierwszej wersji przeprowadź krytykę pod kątem generyczności i „AI slop”, wskaż minimum pięć słabych elementów i popraw minimum trzy najważniejsze.
+
+Nie publikuj strony, nie wysyłaj formularzy, nie kopiuj obecnego logo i nie wymyślaj danych firmy. Jeżeli brakuje finalnych grafik lub wideo, użyj estetycznych lokalnych placeholderów o prawidłowych proporcjach i przygotuj w README dokładną listę materiałów do późniejszej podmiany. Nie używaj przypadkowych obrazów z internetu bez licencji.
+
+Zakończ dopiero po spełnieniu kryteriów ukończenia z 08-claude-build-spec.md. W podsumowaniu podaj strukturę plików, sposób uruchomienia, wykonane testy, poprawki po krytyce oraz listę brakujących materiałów.

@@ -1,0 +1,89 @@
+/* ============================================================
+   KrakowRemonty.com — tokens
+   Kierunek: „Remont bez chaosu” — technicznie, spokojnie, lokalnie.
+   ============================================================ */
+
+:root {
+  /* --- Paleta --- */
+  --c-graphite: #222522;
+  --c-mineral: #F4F1EA;
+  --c-plaster: #D8CFC1;
+  --c-red: #C84E3B;
+  --c-steel: #6D746F;
+  --c-concrete: #E7E3DC;
+  --c-success: #627A64;
+
+  /* Pochodne */
+  --c-graphite-90: rgba(34, 37, 34, .9);
+  --c-graphite-70: rgba(34, 37, 34, .7);
+  --c-graphite-40: rgba(34, 37, 34, .4);
+  --c-graphite-15: rgba(34, 37, 34, .15);
+  --c-graphite-08: rgba(34, 37, 34, .08);
+  --c-mineral-70: rgba(244, 241, 234, .7);
+  --c-mineral-30: rgba(244, 241, 234, .3);
+  --c-mineral-12: rgba(244, 241, 234, .12);
+  --c-red-dark: #A93F2F;
+  --c-ink-on-dark: #EFECE4;
+
+  /* --- Typografia --- */
+  --font-display: "Bricolage Grotesque", "Source Sans 3", sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", monospace;
+
+  --fs-hero: clamp(3.5rem, 7vw, 6.4rem);
+  --fs-h1: clamp(2.8rem, 5.2vw, 5.5rem);
+  --fs-h2: clamp(2rem, 3.8vw, 4rem);
+  --fs-h3: clamp(1.3rem, 2vw, 1.8rem);
+  --fs-lead: clamp(1.1rem, 1.7vw, 1.45rem);
+  --fs-body: 1.0625rem;
+  --fs-mono: .78rem;
+  --fs-mono-sm: .72rem;
+
+  --lh-tight: 1.02;
+  --lh-heading: 1.08;
+  --lh-body: 1.6;
+
+  --ls-mono: .14em;
+
+  /* --- Layout --- */
+  --layout-max: 90rem;      /* 1440 px */
+  --container: 77.5rem;     /* 1240 px */
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* --- Odstępy (baza 8 px) --- */
+  --sp-1: .5rem;
+  --sp-2: 1rem;
+  --sp-3: 1.5rem;
+  --sp-4: 2rem;
+  --sp-6: 3rem;
+  --sp-8: 4rem;
+  --sp-12: 6rem;
+  --sp-16: 8rem;
+  --section-y: clamp(4rem, 9vw, 10rem);
+  --section-y-sm: clamp(3rem, 6vw, 6rem);
+
+  /* --- Kształty --- */
+  --radius-sm: .25rem;
+  --radius-md: .5rem;
+  --radius-lg: .75rem;
+  --cut: 14px; /* ścięty narożnik techniczny */
+
+  /* --- Motion --- */
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --dur-1: 220ms;
+  --dur-2: 550ms;
+  --dur-3: 750ms;
+
+  /* --- Warstwy --- */
+  --z-header: 50;
+  --z-menu: 60;
+  --z-lightbox: 80;
+
+  /* --- Tekstury --- */
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 .13 0 0 0 0 .14 0 0 0 0 .13 0 0 0 .045 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  --noise-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 .95 0 0 0 0 .94 0 0 0 0 .9 0 0 0 .035 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  --grid-light: repeating-linear-gradient(to right, var(--c-graphite-08) 0 1px, transparent 1px 96px),
+                repeating-linear-gradient(to bottom, var(--c-graphite-08) 0 1px, transparent 1px 96px);
+  --grid-dark: repeating-linear-gradient(to right, var(--c-mineral-12) 0 1px, transparent 1px 96px),
+               repeating-linear-gradient(to bottom, var(--c-mineral-12) 0 1px, transparent 1px 96px);
+}
