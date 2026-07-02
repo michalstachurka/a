@@ -1,14 +1,16 @@
 name: Deploy to GitHub Pages
 
+# Publikacja przez gałąź gh-pages: GITHUB_TOKEN nie może tworzyć witryny Pages
+# przez API (enablement), ale gałąź gh-pages aktywuje Pages automatycznie.
+# Strona to statyczne pliki w korzeniu repo, więc wystarczy mirror gałęzi.
+
 on:
   push:
     branches: [claude/pensive-planck-ltpbzh]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
@@ -17,16 +19,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Mirror branch to gh-pages
+        run: git push --force origin HEAD:gh-pages
